@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kim Milyoner Olmak İster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card" >
+                    <div class="card-header"  style="background-color: blue; color: aliceblue;">
+                        <h2 class="card-title " ><center>KİM MİLYONER OLMAK İSTER</center></h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!--sorular burda gozukececk-->
+                         <div id="soru"></div>
+                            <form id="cevap">
+                                <!--radio:bir form elementidir.seçenek işarteleme.aynı name ozelliğine sahip olması gerekiyor-->
+                                <input type="radio" name="cevap" value="a" id="cevapA">
+                                 <label  id="A"></label><br>
+                                <input type="radio" name="cevap" value="b" id="cevapB">
+                                 <label  id="B"></label><br>
+                                 <input type="radio" name="cevap" value="c" id="cevapC">
+                                 <label  id="C"></label><br>
+                                 <input type="radio" name="cevap" value="d" id="cevapD">
+                                 <label  id="D"></label><br>
+                                 <button type="button" style="background-color: rgb(24, 24, 231); color: rgb(97, 154, 187); " onclick="cevapKontrol()">Cevabı Gönder</button>
+                                 <!-- butona tıklandığında cevapKontrol() adlı JavaScript fonksiyonu çalıştırılır. Bu fonksiyon butona tıklama olayını dinler ve ilgili işlemleri gerçekleştirir.-->
+                             </form>
+                                 <p id="sonuc"></p>
+                                 <!--sonucu bilgilendirme işlemi-->
+                            
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+
+
+
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header" style="background-color: rgb(18, 99, 211); color: azure;">
+                    <h2 class="card-title"><center>SKOR TABLOSU</center></h2>
+                </div>
+                <div class="card-body">
+                    <div id="skorTablo">
+                        <ul class="list-group">
+                            <!---->
+                            
+                          </ul>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="/JS/kimMilyonerOlmakIster.js"></script>
+</body>
+</html>
